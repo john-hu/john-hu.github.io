@@ -6,8 +6,14 @@
     <meta charset="utf-8">
     <title>Test</title>
     <script>
-      function openWindow() {
-        var win = window.open('test.json');
+
+      function checkWindow(win) {
+        console.log('hook win.load at', win.location.href);
+
+        setTimeout(function() {
+          console.log('window url: ', win.location.href);
+        }, 500);
+
         win.onload = function() {
           console.log('window loaded');
           try {
@@ -19,11 +25,24 @@
           console.log('finished');
         };
       }
+
+      function openJSONWindow() {
+        var win = window.open('test.json');
+        console.log('open a window which always loads a JSON');
+        checkWindow(win);
+      }
+
+      function openHTMLWindow() {
+        var win = window.open('index.html');
+        console.log('open a window which always loads a HTML file');
+        checkWindow(win);
+      }
     </script>
   </head>
   <body>
     <div>
-      <button onclick="openWindow()">Open a window and check if it is opened correctly.</button>
+      <button onclick="openJSONWindow()">Open a JSON window and check if it is opened correctly.</button>
+      <button onclick="openHTMLWindow()">Open a HTML window and check if it is opened correctly.</button>
     </div>
   </body>
 
