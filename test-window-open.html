@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script>
+      function openWindow() {
+        var win = window.open('test.json');
+        win.onload = function() {
+          console.log('window loaded');
+          try {
+            var jsonError = JSON.parse(win.document.body.innerText);
+            console.log('backend gives us JSON');
+          } catch (ex) {
+            console.log('contains HTML');
+          }
+          console.log('finished');
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <button onclick="openWindow()">Open a window and check if it is opened correctly.</button>
+    </div>
+  </body>
+
+</html>
