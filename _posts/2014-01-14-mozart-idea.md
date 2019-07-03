@@ -2,7 +2,7 @@
 layout: post
 title: Mozart idea
 description: "The thought of mozart project"
-modified: 2014-01-15
+modified: 2014-01-14
 tags: [chinese, mozart, open source, nodejs knockout 2013]
 ---
 
