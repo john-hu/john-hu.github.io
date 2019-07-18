@@ -21,6 +21,7 @@ figure {
   padding-top: 10px;
   padding-bottom: 10px;
   @include clearfix();
+  text-align: center;
 
   img {
     margin-bottom: 10px;
