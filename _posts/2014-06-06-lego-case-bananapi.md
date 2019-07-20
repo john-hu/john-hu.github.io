@@ -3,7 +3,7 @@ layout: post
 title: Lego Case for Banana Pi
 description: "A Banana Pi case built with lego bricks"
 modified: 2014-06-06
-tags: [Maker]
+tags: [Maker, LEGO]
 image:
   path: /images/maker/lego_case_bpi1.jpg
   feature: maker/lego_case_bpi1.jpg
