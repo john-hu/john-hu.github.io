@@ -16,7 +16,7 @@ My first examle is "histogram". Before discussing it, let me explain a little bi
 
 Before using Open CL, I tried to write a small piece of Open CL code. The first part moved to Open CL is the R, G, B counting. The program looks like:
 
-```C
+```c++
 // 1024 pixels per work item.
 #define BIN_SIZE 1024
 #define RESULT_SIZE 768
