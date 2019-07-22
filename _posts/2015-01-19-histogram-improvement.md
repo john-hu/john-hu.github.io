@@ -2,7 +2,7 @@
 layout: post
 title: Open CL Color Histogram - Improvement Attempt
 description: "The improvement code of color histogram"
-modified: 2015-01-18
+modified: 2015-01-19
 tags: [Open CL, Open Source]
 ---
 
