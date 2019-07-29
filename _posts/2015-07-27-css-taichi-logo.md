@@ -11,4 +11,4 @@ image:
 
 A Taichi logo made with pure CSS, [codepen link](https://codepen.io/john-hu/pen/NqOoxr):
 
-<iframe height="300px" src="http://codepen.io/john-hu/embed/NqOoxr" width="300px"></iframe>
+<iframe height="300px" src="https://codepen.io/john-hu/embed/NqOoxr" width="300px"></iframe>
